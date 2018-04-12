@@ -76,13 +76,13 @@ def bisect_left(array, query, seq, lo=0, hi=None): #binar Suffix Array pattern m
 
 
 
-f1=open(sys.argv[1],"r")# 主串
+f1=open(sys.argv[1],"r")# main string
 string1=f1.read()
 f2=open(sys.argv[2],"r")#SA
 lines=f2.readlines()
 f3=open(sys.argv[3],"r")#pattern
 pats=f3.readlines()
-lines=map(long,lines)
+lines=map(long,lines) #turn the lines from a string list to a long int list,since we need int
 print ('text: ')
 for pat in pats:
     pat=pat[:-1]
