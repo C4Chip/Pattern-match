@@ -15,13 +15,15 @@ CACGAA---CTAAACAGACTAG-TTTCTCGCTAGCTGATCGATACTTACCACAGCTAAAA
 GATGCTATT-TAGCTAGCT-CGTAGTA
 ||||||||| | | |||| | ||
 GATGCTATTATTG-GAGCTAATTTTTA
-edit distance = 34
+edit distance = 34
+
 
 
 2. BruteBoyerSuxxix.py
-   python BruteBoyerSuxxix.py text.txt text.sa text.pat
+   python BruteBoyerSuffix.py text.txt text.sa text.pat
+
 in my case
-   python BruteBoyerSuxxix.py testBook.txt suffix.txt patterns.pat
+   python BruteBoyerSuffix.py testBook.txt suffix.txt patterns.pat
 expect output:
 text: "testBook.txt"
 pattern: "the"
@@ -40,7 +42,9 @@ pattern: "dishevelled"
 occurrences: 1
 Suffix Array: 9.10000000003e-05 s
 Brute Force: 0.59254 s
-Boyer-Moore: 0.121932 s
+Boyer-Moore: 0.121932 s
+
+in suffix array, using binary search to get the pattern
 
 
 3. how to get suffix array
